@@ -1,54 +1,106 @@
-# React + TypeScript + Vite
+# Raven FX Trading Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern cryptocurrency trading platform built with React, TypeScript, and Vite. Features real-time candlestick charts, order book visualization, and portfolio management.
 
-Currently, two official plugins are available:
+## 🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Real-time cryptocurrency price tracking
+- Interactive candlestick charts using ECharts
+- User authentication with Gravatar integration
+- Responsive design for desktop and mobile
+- Dark mode support
+- Order book visualization
 
-## Expanding the ESLint configuration
+## 🛠️ Prerequisites
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Before running this project, make sure you have:
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- Node.js (v18 or higher)
+- npm (v9 or higher)
+- Git
+
+## 📦 Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/yourusername/raven-fx.git
+cd raven-fx
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+2. Install dependencies:
+```bash
+npm install
 ```
+
+3. Create a `.env` file in the root directory:
+```env
+VITE_API_URL=https://api.coingecko.com/api/v3
+```
+
+## 🏃‍♂️ Running the Application
+
+To start the development server:
+
+```bash
+npm run dev
+```
+
+This will start the app at `http://localhost:5173`
+
+For production build:
+
+```bash
+npm run build
+npm run preview
+```
+
+## 🧪 Running Tests
+
+```bash
+npm run test
+```
+
+## 📁 Project Structure
+
+```
+src/
+├── components/
+│   ├── atoms/       # Basic components (Button, Input)
+│   ├── molecules/   # Composite components (SearchBar)
+│   ├── organisms/   # Complex components (Header, TradingChart)
+│   ├── templates/   # Layout components
+│   └── pages/       # Page components
+├── store/           # State management
+├── styles/          # SCSS styles
+├── utils/           # Utility functions
+└── types/           # TypeScript type definitions
+```
+
+## 🎨 Technologies Used
+
+- React 18
+- TypeScript
+- Vite
+- SCSS
+- ECharts
+- Zustand (State Management)
+- React Router
+- Zod (Schema Validation)
+
+## 📝 Environment Variables
+
+| Variable | Description | Default |
+|----------|-------------|---------|
+| VITE_API_URL | CoinGecko API URL | https://api.coingecko.com/api/v3 |
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
