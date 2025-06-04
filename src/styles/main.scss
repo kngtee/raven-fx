@@ -1,0 +1,34 @@
+:root {
+  --primary-color: #3b82f6;
+  --secondary-color: #6b7280;
+  --background-color: #0b0f1a;
+  --text-primary: #111827;
+  --text-secondary: #6b7280;
+  --border-color: #515252;
+  --error-color: #ef4444;
+  --primary-rgb: 59, 130, 246;
+  --font-family: 'Inter', sans-serif;
+
+  font-family: var(--font-family);
+  background-color: var(--background-color);
+  color: var(--text-primary);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+@import './templates/xchange-layout';
+
+@import './atoms/input';
+@import './atoms/button';
+
+@import './pages/xchange-page';
+@import './pages/auth-page';
+
+@import './organisms/header';
+@import './organisms/footer';
+@import './organisms/order-book';
+@import './organisms/trading-chart';
+@import './organisms/order-form';
+

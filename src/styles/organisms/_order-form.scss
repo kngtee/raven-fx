@@ -1,0 +1,51 @@
+.order-form {
+  background-color: #111827;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  color: #ffffff;
+
+  &__title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #93c5fd;
+  }
+
+  &__input {
+    margin-bottom: 1rem;
+
+    input {
+      width: 100%;
+      padding: 0.75rem;
+      background: #1f2937;
+      color: #fff;
+      border: 1px solid #374151;
+      border-radius: 0.5rem;
+    }
+  }
+
+  &__total {
+    margin: 1rem 0;
+    font-weight: 600;
+    color: #10b981;
+  }
+
+  &__button {
+    width: 100%;
+    padding: 0.75rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+
+    &--buy {
+      background-color: #10b981;
+      color: #fff;
+    }
+
+    &--sell {
+      background-color: #ef4444;
+      color: #fff;
+    }
+  }
+}

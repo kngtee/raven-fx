@@ -1,0 +1,35 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0e1629;
+  color: #ccc;
+  padding: 1rem 2rem;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+
+  &__text {
+    font-size: 0.875rem;
+  }
+
+  &__link {
+    font-size: 0.875rem;
+    color: #6da7ff;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  &__icon {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    color: #6da7ff;
+    text-decoration: none;
+
+    &:hover {
+      color: #ffffff;
+    }
+  }
+}

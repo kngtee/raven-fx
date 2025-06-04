@@ -1,0 +1,19 @@
+.trading-chart {
+  background-color: #111827;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  color: #ffffff;
+
+  &__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  &__container {
+    background-color: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 8px;
+    height: auto;
+  }
+}

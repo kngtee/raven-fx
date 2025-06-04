@@ -1,0 +1,32 @@
+.order-book {
+  background-color: #111827;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  color: #ffffff;
+
+  &__title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color: #60a5fa;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+    font-family: monospace;
+    color: #d1d5db;
+    border-bottom: 1px solid #1f2937;
+
+    &:last-child {
+      border-bottom: none;
+    }
+  }
+}

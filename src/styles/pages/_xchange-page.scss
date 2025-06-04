@@ -1,0 +1,19 @@
+.exchange-page {
+  &__main {
+    overflow-y: auto;
+  }
+
+  &__chart {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  }
+
+  &__side {
+    .order-book,
+    .order-form {
+      background-color: #141c2f;
+      border-radius: 8px;
+      padding: 1rem;
+      box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    }
+  }
+}

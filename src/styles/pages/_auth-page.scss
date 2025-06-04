@@ -1,0 +1,33 @@
+.auth-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1rem;
+  min-height: 100vh;
+  background-color: #0e1629;
+  color: #f0f0f0;
+
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+  }
+
+  .auth-page__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 320px;
+    gap: 1rem;
+  }
+
+  .auth-page__avatar {
+    margin-top: 2rem;
+    border-radius: 50%;
+    border: 2px solid #6da7ff;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+  }
+}
