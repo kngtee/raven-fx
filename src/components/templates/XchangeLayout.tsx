@@ -10,7 +10,9 @@ const XchangeLayout = ({ children }: XchangeLayoutProps) => {
   return (
     <div className="xchange-page">
       <Header />
-      <main className="xchange-page__main">{children}</main>
+      <div className="app-container">
+        <main className="xchange-page__main">{children}</main>
+      </div>
       <Footer />
     </div>
   );

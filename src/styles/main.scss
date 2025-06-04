@@ -8,6 +8,7 @@
   --error-color: #ef4444;
   --primary-rgb: 59, 130, 246;
   --font-family: 'Inter', sans-serif;
+  --max-width: 1200px;
 
   font-family: var(--font-family);
   background-color: var(--background-color);
@@ -15,6 +16,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.app-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 1rem;
 }
 
 
