@@ -12,7 +12,7 @@ const OrderForm = ({ symbol }: OrderFormProps) => {
   const total = price * amount;
   return (
     <div className="order-form">
-      <h2 className="order-form__title">Buy {symbol}</h2>
+      <h2 className="order-form__title">Buy {symbol.toUpperCase()}</h2>
       <Input
         className="order-form__input"
         type="number"
@@ -27,7 +27,7 @@ const OrderForm = ({ symbol }: OrderFormProps) => {
       />
       <div className="order-form__total">Total: {total.toFixed(2)}</div>
       <Button className="order-form__button order-form__button--buy">
-        Buy {symbol}
+        Buy {symbol.toUpperCase()}
       </Button>
     </div>
   );

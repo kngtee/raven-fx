@@ -11,22 +11,81 @@
     color: #60a5fa;
   }
 
+    &__wrapper {
+    flex: 1;
+    min-height: 0;
+    overflow: hidden;
+  }
+
   &__list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
+    height: 100%;
+    max-height: 400px; 
+    overflow-y: auto;
+    padding-right: 0.5rem;
+    
+    &::-webkit-scrollbar {
+      width: 6px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: #1e293b;
+      border-radius: 3px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: #334155;
+      border-radius: 3px;
+      
+      &:hover {
+        background: #475569;
+      }
+    }
   }
 
   &__item {
-    display: flex;
-    justify-content: space-between;
-    padding: 0.5rem 0;
-    font-family: monospace;
-    color: #d1d5db;
-    border-bottom: 1px solid #1f2937;
+   display: grid;
+    grid-template-columns: 2fr 1fr 1.5fr 1.5fr;
+    gap: 1rem;
+    align-items: center;
+    background: #0f172a;
+    padding: 1rem;
+    border-radius: 0.75rem;
+    font-size: 0.875rem;
+    position: relative;
+    counter-increment: order-counter;
 
-    &:last-child {
-      border-bottom: none;
+    &::before {
+      content: counter(order-counter);
+      position: absolute;
+      left: -2rem;
+      color: #64748b;
+      font-size: 0.75rem;
+      font-weight: 500;
+    }
+
+    &:hover {
+      background: #1e293b;
+    }
+  }
+  &__pair {
+    font-weight: 600;
+  }
+
+  &__price {
+    color: #22c55e;
+  }
+
+  &__volume {
+    color: #38bdf8;
+  }
+
+  &__link {
+    color: #3b82f6;
+    text-decoration: none;
+    font-size: 0.75rem;
+
+    &:hover {
+      text-decoration: underline;
     }
   }
 }
