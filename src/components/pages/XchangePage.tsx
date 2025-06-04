@@ -29,6 +29,12 @@ const XchangePage = () => {
     <XchangeLayout>
       <div className="xchange-page__main">
         <section className="xchange-page__chart">
+          <h1 className="xchange-page__title">
+            Trading Chart - {coinId.toUpperCase()}
+          </h1>
+          <p className="xchange-page__description">
+            Search a coin to view its trading chart.
+          </p>
           <TradingChart data={ohlcData} />
         </section>
         <aside className="xchange-page__side">
