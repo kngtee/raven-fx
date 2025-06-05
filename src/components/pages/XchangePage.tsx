@@ -1,4 +1,3 @@
-/* eslint-disable @typescript-eslint/no-unused-vars */
 import { useEffect, useState } from "react";
 import OrderBook from "../organisms/OrderBook";
 import OrderForm from "../organisms/OrderForm";
@@ -8,7 +7,7 @@ import { fetchOHLCData, fetchTradingPairs } from "../../utils/api";
 import type { OHLCData } from "../../types/candle";
 
 const XchangePage = () => {
-  const [coinId, setCoinId] = useState("bitcoin");
+  const coinId = "bitcoin";
   const [tickers, setTickers] = useState([]);
   const [ohlcData, setOhlcData] = useState<OHLCData[]>([]);
 
@@ -30,7 +29,7 @@ const XchangePage = () => {
       <div className="xchange-page__main">
         <section className="xchange-page__chart">
           <h1 className="xchange-page__title">
-            Trading Chart - {coinId.toUpperCase()}
+            Trading Chart - {coinId.toUpperCase()} 1hr
           </h1>
           <p className="xchange-page__description">
             Search a coin to view its trading chart.

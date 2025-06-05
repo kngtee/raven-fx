@@ -25,7 +25,7 @@ const OrderForm = ({ symbol }: OrderFormProps) => {
         placeholder="Amount"
         onChange={(e) => setAmount(Number(e.target.value))}
       />
-      <div className="order-form__total">Total: {total.toFixed(2)}</div>
+      <div className="order-form__total">Total: ${total.toLocaleString()}</div>
       <Button className="order-form__button order-form__button--buy">
         Buy {symbol.toUpperCase()}
       </Button>
